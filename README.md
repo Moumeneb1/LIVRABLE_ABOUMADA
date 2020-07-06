@@ -65,7 +65,22 @@ These results showcase the results of using these models on the psycho corpus
 
 You can find the adapted Language models weights on these links : 
 
-- [flaubert_base_cased_psycho]()
-- [bert_base_multilingual_cased_psycho](https://drive.google.com/file/d/1L2JMjOEByZ0nbE2urYeziLtzHlFGLN_d/view?usp=sharing)
+- [flaubert_base_cased_psycho](https://drive.google.com/file/d/1Z3DkszF2Ap1qBLUvyNHyKqeeLzkAYnmt/view?usp=sharing)
+- [bert_base_multilingual_cased_psycho](https://drive.google.com/file/d/1RLsqB7VqHXq1rEgJXn8dtFw09moIBQIf/view?usp=sharing)
 - [flaubert_base_cased_crisis](https://drive.google.com/file/d/1akx2kbtFv25o3kJLChDrosMhM4j6dx7M/view?usp=sharing)
-- [bert_base_multilingual_cased_crisis]()
+- [bert_base_multilingual_cased_crisis](https://drive.google.com/file/d/1L2JMjOEByZ0nbE2urYeziLtzHlFGLN_d/view?usp=sharing)
+
+
+__Notice__ : 
+Adapted models are adapted Language models weights that can be used with any combination, You can train them using the __LM_Training_script__ from the pipeline and saved them on a folder that you can reference after, for instance if you wanna use the flaubert_base_cased_psycho.
+ 1. Download the LM  
+ 2. Unzip the folder 
+ 3. Reference the folder when creating instantiating your model 
+ 
+ 
+```python 
+>>> from transformers import AutoModel
+>>> from easy_nlp.models import BasicBertForClassification,
+>>> base_model = AutoModel.from_pretrained(#Path too your Folder)
+>>> model = BasicBertForClassification(base_model,n_class)
+```
