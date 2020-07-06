@@ -1,4 +1,4 @@
-# This Folder contains the notebooks used for training the models on the Three-level classificatino of Frenh tweets in ecological crisis
+# This Folder contains the notebooks used for training the models on the Three-level classificatino of French tweets in ecological crisis
 
 ```bibtex
 @article{Kozlowski-et-al2020,
